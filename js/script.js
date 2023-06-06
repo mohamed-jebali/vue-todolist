@@ -42,5 +42,8 @@ createApp({
     removeList(indexElement){
       this.list.splice(indexElement,1);
     },
+    toggleValue(element){
+      element.done = !element.done
+    }
   }
 }).mount('#app')

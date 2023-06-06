@@ -21,7 +21,7 @@
                 <h1 class="text-center">
                     Todo List &check;
                 </h1>
-                <li v-for="(elements,index) in list" :class="{ cancelled: elements.done }">
+                <li v-for="(elements,index) in list" :class="{ cancelled: elements.done }" @click="toggleValue(elements)">
                     {{ elements.text }}
                     <span @click="removeList"><i class="fa-solid fa-xmark"></i></span>
                 </li>
