@@ -19,8 +19,8 @@
                 Todo List
             </h1>
             <ul class="todolist">
-                <li v-for="(elements,index) in list" :class="{ cancelled: elements }">
-                    {{ elements }}
+                <li v-for="(elements,index) in list" :class="{ cancelled: list.done }">
+                    {{ elements.text }}
                     <span @click="removeList"><i class="fa-solid fa-xmark"></i></span>
                 </li>
                 <input type="text" v-model="newElement" @keydown.enter="addToList">

@@ -22,13 +22,15 @@ createApp({
   data() {
     return {
       indexElement: 0,
-      list:[],
+      list:[
+        { text: "", done:false},
+      ],
       newElement:"",
     };
   },
   methods:{
     addToList(){
-      this.list.push(this.newElement);
+      this.list.push({ text: this.newElement, done:false});
       this.newElement = "";
     },
     removeList(indexElement){
