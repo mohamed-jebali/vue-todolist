@@ -23,7 +23,7 @@
                     {{ elements.text }}
                     <span @click="removeList"><i class="fa-solid fa-xmark"></i></span>
                 </li>
-                <input type="text" v-model="newElement" @keydown.enter="addToList">
+                <input type="text" v-model="newElement" @keydown.enter="addToList" placeholder="Inserisci un elemento nella lista">
                 <button @click="addToList">Add</button>
             </ul>
         </div>

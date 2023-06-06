@@ -34,8 +34,10 @@ createApp({
   },
   methods:{
     addToList(){
+      if(this.newElement !== ""){
       this.list.push({ text: this.newElement, done:false});
       this.newElement = "";
+    }
     },
     removeList(indexElement){
       this.list.splice(indexElement,1);
