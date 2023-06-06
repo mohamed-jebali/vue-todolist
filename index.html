@@ -19,7 +19,7 @@
                 Todo List
             </h1>
             <ul class="todolist">
-                <li v-for="(elements,index) in list" :class="{ cancelled: list.done }">
+                <li v-for="(elements,index) in list" :class="{ cancelled: elements.done }">
                     {{ elements.text }}
                     <span @click="removeList"><i class="fa-solid fa-xmark"></i></span>
                 </li>

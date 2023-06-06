@@ -23,7 +23,11 @@ createApp({
     return {
       indexElement: 0,
       list:[
-        { text: "", done:false},
+        { text: "Imparare a ballare la Techno", done:false},
+        { text: "Imparare a ballare la Break Dance", done:false},
+        { text: "Imparare a ballare la Salsa", done:true},
+        { text: "Imparare a ballare il Flamenco", done:true},
+        { text: "Imparare a ballare la Bachata ", done:true},
       ],
       newElement:"",
     };
@@ -35,6 +39,6 @@ createApp({
     },
     removeList(indexElement){
       this.list.splice(indexElement,1);
-    }
+    },
   }
 }).mount('#app')
