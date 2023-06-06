@@ -18,10 +18,10 @@
             <h1>
                 Todo List
             </h1>
-            <ul class="colors">
+            <ul class="todolist">
                 <li v-for="(elements,index) in list">
                     {{ elements }}
-                    <span><i class="fa-solid fa-xmark"></i></span>
+                    <span @click="removeList"><i class="fa-solid fa-xmark"></i></span>
                 </li>
                 <input type="text" v-model="newElement" @keydown.enter="addToList">
                 <button @click="addToList">Add</button>

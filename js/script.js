@@ -21,7 +21,6 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-      message: 'Hello For',
       indexElement: 0,
       list:[],
       newElement:"",
@@ -31,6 +30,9 @@ createApp({
     addToList(){
       this.list.push(this.newElement);
       this.newElement = "";
+    },
+    removeList(indexElement){
+      this.list.splice(indexElement,1);
     }
   }
 }).mount('#app')
